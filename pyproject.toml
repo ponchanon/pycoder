@@ -1,0 +1,13 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=67", "wheel"]
+
+[project]
+name = "pycoder"
+version = "0.0.1"
+description = "Python Problem Solver"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.11"
+dependencies = [
+    "pre-commit~=3.8.0",
+]
