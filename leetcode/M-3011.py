@@ -28,7 +28,7 @@ class Solution:
 #         prev_max = float('-inf')
 #         curr_min, curr_max = nums[0], nums[0]
 #         curr_bits = nums[0].bit_count()
-#         for i in range(len(nums)-1):
+#         for i in range(len(nums)):
 #             if nums[i].bit_count()!=curr_bits:
 #                 if prev_max > curr_min:
 #                     return False
@@ -38,4 +38,4 @@ class Solution:
 #             else:
 #                 curr_min = min(curr_min, nums[i])
 #                 curr_max = max(curr_max, nums[i])
-#         return True
+#         return curr_min >= prev_max
